@@ -7,6 +7,8 @@
 
 Create OpenSiv3D application CLI.
 
+![画面収録 2019-08-24 18 16 53 mov](https://user-images.githubusercontent.com/24543982/63636247-e8dac400-c6a7-11e9-940d-86c04f1525b7.gif)
+
 # Installation
 
 ```bash
