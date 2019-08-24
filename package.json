@@ -1,0 +1,63 @@
+{
+  "name": "create-siv-app",
+  "version": "0.0.0",
+  "author": "hota1024 @hota1024",
+  "bin": {
+    "create-siv-app": "./bin/run"
+  },
+  "bugs": "https://github.com/hota1024/create-siv-app/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "@types/inquirer": "^6.5.0",
+    "@types/listr": "^0.14.2",
+    "@types/progress-stream": "^2.0.0",
+    "@types/unzipper": "^0.10.0",
+    "axios": "^0.19.0",
+    "cli-ux": "^5.3.1",
+    "inquirer": "^6.5.1",
+    "listr": "^0.14.3",
+    "progress-stream": "^2.0.0",
+    "tslib": "^1",
+    "unzipper": "^0.10.4"
+  },
+  "devDependencies": {
+    "@oclif/test": "^1",
+    "@oclif/tslint": "^3",
+    "@types/chai": "^4",
+    "@types/mocha": "^5",
+    "@types/node": "^10",
+    "chai": "^4",
+    "mocha": "^5",
+    "nyc": "^13",
+    "prettier": "^1.18.2",
+    "ts-node": "^8",
+    "tslint": "^5",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/hota1024/create-siv-app",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "create-siv-app"
+  },
+  "repository": "hota1024/create-siv-app",
+  "scripts": {
+    "posttest": "tslint -p test -t stylish",
+    "prepack": "rm -rf lib && tsc -b",
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\""
+  },
+  "types": "lib/index.d.ts"
+}
